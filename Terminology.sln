@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.WebHost", "Terminology.WebHost\Terminology.WebHost.csproj", "{169C18F2-6641-4FEB-856A-D07BB42D3CE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.Core", "Terminology.Core\Terminology.Core.csproj", "{D08861F3-020C-42FE-9DD4-2474951A01BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
