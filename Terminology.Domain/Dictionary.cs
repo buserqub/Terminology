@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace Terminology.Core.Domain
+namespace Terminology.Domain
 {
     internal class Dictionary
     {
