@@ -2,12 +2,12 @@
 
 namespace Terminology.Domain
 {
-    internal class Dictionary
+    public class Dictionary
     {
         /// <summary>
         /// Идентификатор записи справочника
         /// </summary>
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid Id { get; private set; } = Guid.NewGuid();
 
         /// <summary>
         /// Название справочника в соответствии с НСИ

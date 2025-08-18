@@ -5,7 +5,11 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.WebHost", "Terminology.WebHost\Terminology.WebHost.csproj", "{169C18F2-6641-4FEB-856A-D07BB42D3CE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.Core", "Terminology.Core\Terminology.Core.csproj", "{D08861F3-020C-42FE-9DD4-2474951A01BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.Domain", "Terminology.Domain\Terminology.Domain.csproj", "{2024DF90-7F5B-4002-9D14-7E941ADCCA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.App.Implements", "Terminology.App.Implements\Terminology.App.Implements.csproj", "{236666A2-386A-42CB-8837-F7DA96557C26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.App.Infra.Contracts", "Terminology.App.Infra.Contracts\Terminology.App.Infra.Contracts.csproj", "{F3DD1665-50D0-4630-924C-0FBD894CF0E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{169C18F2-6641-4FEB-856A-D07BB42D3CE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D08861F3-020C-42FE-9DD4-2474951A01BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2024DF90-7F5B-4002-9D14-7E941ADCCA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2024DF90-7F5B-4002-9D14-7E941ADCCA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2024DF90-7F5B-4002-9D14-7E941ADCCA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2024DF90-7F5B-4002-9D14-7E941ADCCA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236666A2-386A-42CB-8837-F7DA96557C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236666A2-386A-42CB-8837-F7DA96557C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236666A2-386A-42CB-8837-F7DA96557C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236666A2-386A-42CB-8837-F7DA96557C26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DD1665-50D0-4630-924C-0FBD894CF0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DD1665-50D0-4630-924C-0FBD894CF0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DD1665-50D0-4630-924C-0FBD894CF0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DD1665-50D0-4630-924C-0FBD894CF0E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,13 @@
-using System.Security.Cryptography;
 using Terminology.WebHost.Extensions.HostBuilder;
+using Terminology.WebHost.Extensions.ServiceCollection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.AddSerilog();
 
-var app = builder.Build();
+builder.Services.AddControllers();
+builder.Services.AddSwagger(builder.Configuration);
 
-Oid oid = new Oid("1.2.643.5.1.13.13.12.3.23.131446");
-Console.WriteLine(oid.Value);
+var app = builder.Build();
 
 app.Run();
