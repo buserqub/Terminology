@@ -4,11 +4,13 @@ using Terminology.Domain;
 
 namespace Terminology.App.Infra.Contracts.EF.EntityConfiguration
 {
-    internal class DictionaryConfiguration : IEntityTypeConfiguration<Dictionary>
+    internal class RecordConfiguration : IEntityTypeConfiguration<Record>
     {
-        public void Configure(EntityTypeBuilder<Dictionary> builder)
+        public void Configure(EntityTypeBuilder<Record> builder)
         {
             builder.HasKey(x => x.Id);
+
+            builder.HasOne(x => x.Dictionary).WithMany(x => x.Records);
         }
     }
 }

@@ -23,5 +23,10 @@ namespace Terminology.Domain
         /// Версия справочника
         /// </summary>
         public required string Version { get; set; }
+
+        /// <summary>
+        /// Список записей в справочнике
+        /// </summary>
+        public required List<Record> Records { get; set; }
     }
 }

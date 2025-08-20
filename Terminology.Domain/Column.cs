@@ -8,9 +8,9 @@
         public Guid Id { get; set; } = Guid.NewGuid();
 
         /// <summary>
-        /// Идентификатор принадлежности к записи справочника НСИ
+        /// Запись которой принадлежит пара колонка-значение
         /// </summary>
-        public required Guid DictionaryId { get; set; }
+        public required Record Record { get; set; }
 
         /// <summary>
         /// Название колонки
@@ -20,6 +20,6 @@
         /// <summary>
         /// Значение колонки
         /// </summary>
-        public required string Value { get; set; }
+        public string? Value { get; set; }
     }
 }

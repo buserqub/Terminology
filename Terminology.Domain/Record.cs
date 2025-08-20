@@ -8,8 +8,13 @@
         public Guid Id { get; set; } = Guid.NewGuid();
 
         /// <summary>
-        /// Идентификатор принадлежности к справочнику НСИ
+        /// Справочник которому принадледит запись
         /// </summary>
-        public required Guid DictionaryId { get; set; }
+        public required Dictionary Dictionary { get; set; }
+
+        /// <summary>
+        /// Список пар колонка-значение в записи
+        /// </summary>
+        public required List<Column> Columns { get; set; }
     }
 }
