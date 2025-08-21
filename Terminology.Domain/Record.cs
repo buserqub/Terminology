@@ -1,4 +1,6 @@
-﻿namespace Terminology.Domain
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Terminology.Domain
 {
     public class Record
     {
@@ -10,6 +12,7 @@
         /// <summary>
         /// Справочник которому принадледит запись
         /// </summary>
+        [Column("DictionaryId")]
         public required Dictionary Dictionary { get; set; }
 
         /// <summary>

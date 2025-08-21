@@ -1,15 +1,20 @@
-﻿namespace Terminology.Domain
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Terminology.Domain
 {
     public class Column
     {
         /// <summary>
         /// Идентификатор колонки записи справочника НСИ
         /// </summary>
+        [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
 
         /// <summary>
         /// Запись которой принадлежит пара колонка-значение
         /// </summary>
+        [Column("RecordId")]
         public required Record Record { get; set; }
 
         /// <summary>
