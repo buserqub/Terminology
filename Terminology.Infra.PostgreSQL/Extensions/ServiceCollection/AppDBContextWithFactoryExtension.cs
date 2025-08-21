@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
+using System.Data.Common;
 
 namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
 {
@@ -14,7 +15,7 @@ namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
 
             services.AddDbContextFactory<AppDbContext>(options =>
             {
-                options.UseNpgsql(dataSource);
+                options.UseNpgsql(connection: new DbConnection());
             });
 
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(dataSource));
@@ -24,7 +25,17 @@ namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
 
         private static NpgsqlDataSource ConfigureDataSource(IConfiguration configuration)
         {
-            var dataSourceBuilder = new NpgsqlDataSourceBuilder(configuration.GetRequiredSection("PostgreSqlOptions:ConnectionString").Value);
+            var connectionSection = configuration.GetRequiredSection("PostgreSqlOptions:ConnectionString");
+            var connectionString = string.Join(";", new[]
+            {
+                $"Host={connectionSection["Host"]}",
+                $"Port={connectionSection["Port"]}",
+                $"Database={connectionSection["Database"]}",
+                $"Username={connectionSection["Username"]}",
+                $"Password={connectionSection["Password"]}"
+            });
+
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
             var dataSource = dataSourceBuilder.Build();
 
             return dataSource;
