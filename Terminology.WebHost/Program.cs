@@ -8,6 +8,8 @@ builder.Host.AddSerilog();
 builder.Services.AddControllers();
 builder.Services.AddSwagger(builder.Configuration);
 
+builder.Services.AddDomainLayer(builder.Configuration);
+
 var app = builder.Build();
 
 app.Run();
