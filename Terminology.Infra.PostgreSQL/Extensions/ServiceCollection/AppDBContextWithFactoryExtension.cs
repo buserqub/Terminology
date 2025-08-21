@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Terminology.App.Infra.Contracts.EF;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
 {

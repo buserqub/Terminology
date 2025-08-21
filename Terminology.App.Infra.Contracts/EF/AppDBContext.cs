@@ -1,10 +1,10 @@
-﻿using System.Reflection;
+﻿using Terminology.Domain;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Terminology.Domain;
 
 namespace Terminology.App.Infra.Contracts.EF
 {
-    internal class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
         public DbSet<Dictionary> Dictionary { get; set; }
         public DbSet<Record> Record { get; set; }
