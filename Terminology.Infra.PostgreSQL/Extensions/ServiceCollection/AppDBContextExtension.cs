@@ -3,9 +3,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
-using System.Data.Common;
 
-namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
+namespace Terminology.Infra.PostgreSql.Extensions.ServiceCollection
 {
     internal static class AddAppDbContextExtension
     {

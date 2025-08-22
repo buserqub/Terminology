@@ -17,7 +17,7 @@ namespace Terminology.Domain
         /// <summary>
         /// OID справочника
         /// </summary>
-        public required Oid Oid { get; set; }
+        public required string Oid { get; set; }
 
         /// <summary>
         /// Версия справочника

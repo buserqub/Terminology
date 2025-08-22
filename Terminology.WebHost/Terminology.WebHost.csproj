@@ -7,9 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Serilog" Version="4.3.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Terminology.App.Implements\Terminology.App.Implements.csproj" />
+    <ProjectReference Include="..\Terminology.Domain\Terminology.Domain.csproj" />
+    <ProjectReference Include="..\Terminology.Infra.PostgreSQL\Terminology.Infra.PostgreSql.csproj" />
   </ItemGroup>
 
 </Project>

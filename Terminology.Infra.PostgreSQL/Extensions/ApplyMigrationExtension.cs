@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Terminology.Infra.PostgreSQL.Extensions
+namespace Terminology.Infra.PostgreSql.Extensions
 {
     public static class ApplyMigrationsExtension
     {

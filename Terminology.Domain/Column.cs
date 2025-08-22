@@ -14,7 +14,6 @@ namespace Terminology.Domain
         /// <summary>
         /// Запись которой принадлежит пара колонка-значение
         /// </summary>
-        [Column("RecordId")]
         public required Record Record { get; set; }
 
         /// <summary>

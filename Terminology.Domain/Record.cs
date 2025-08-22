@@ -12,7 +12,6 @@ namespace Terminology.Domain
         /// <summary>
         /// Справочник которому принадледит запись
         /// </summary>
-        [Column("DictionaryId")]
         public required Dictionary Dictionary { get; set; }
 
         /// <summary>

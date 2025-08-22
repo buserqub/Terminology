@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.App.Implements"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.App.Infra.Contracts", "Terminology.App.Infra.Contracts\Terminology.App.Infra.Contracts.csproj", "{F3DD1665-50D0-4630-924C-0FBD894CF0E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.Infra.PostgreSQL", "Terminology.Infra.PostgreSQL\Terminology.Infra.PostgreSQL.csproj", "{DB85269E-BE1C-4FBD-907A-D2C6430336D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terminology.Infra.PostgreSql", "Terminology.Infra.PostgreSQL\Terminology.Infra.PostgreSql.csproj", "{DB85269E-BE1C-4FBD-907A-D2C6430336D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
