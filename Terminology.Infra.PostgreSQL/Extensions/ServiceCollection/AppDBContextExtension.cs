@@ -7,16 +7,11 @@ using System.Data.Common;
 
 namespace Terminology.Infra.PostgreSQL.Extensions.ServiceCollection
 {
-    internal static class AddAppDbContextWithFactoryExtension
+    internal static class AddAppDbContextExtension
     {
-        public static IServiceCollection AddAppDbContextWithFactory(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddAppDbContext(this IServiceCollection services, IConfiguration configuration)
         {
             var dataSource = ConfigureDataSource(configuration);
-
-            services.AddDbContextFactory<AppDbContext>(options =>
-            {
-                options.UseNpgsql(connection: new DbConnection());
-            });
 
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(dataSource));
 
